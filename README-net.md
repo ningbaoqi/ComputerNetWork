@@ -22,3 +22,6 @@
 
 ### 网际协议IP
 [网际协议IP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-ip-protocol.md)
+
+### 划分子网和构造超网
+[划分子网和构造超网](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-net-protocol.md)
