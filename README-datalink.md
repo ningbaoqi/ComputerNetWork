@@ -11,3 +11,6 @@
 |提高了系统的可靠性、可用性和生存性|
 
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-10.jpg)   pic-10.jpg
+
+#### CSMA/CD协议
++ `CSMA/CD协议`意思是`载波监听多点接入/碰撞检测`；`CSMA/CD协议`的要点：`多点接入`就是说明这是`总线型网络`，许多计算机以多点接入的方式连接在一根总线上，协议的实质是`载波监听`和`碰撞检测`；`载波监听`就是用电子技术检测总线上有没有其他计算机也在发送；
