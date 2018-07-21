@@ -9,3 +9,5 @@
 |具有广播功能，从一个站点可很方便的访问全网，局域网上的主机可共享连接在局域网上的各种硬件资源和软件资源|
 |便于系统的扩展和逐渐的演变，各设备的位置可灵活调整和改变|
 |提高了系统的可靠性、可用性和生存性|
+
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-10.jpg)   pic-10.jpg
