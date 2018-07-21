@@ -3,3 +3,4 @@
 #### ADSL技术
 + 非对称数字用户线ADSL技术是用数字技术对现有的模拟电话用户线进行改造；
 #### FTTx技术
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-5.jpg)   pic-5.jpg
