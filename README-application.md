@@ -8,3 +8,5 @@
 [远程终端协议TELNET](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-TELNET-technology.md)
 ### 文件传送协议
 [文件传送协议](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-FILE-technology.md)
+### 域名系统DNS
+[域名系统DNS](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-DNS-technology.md)
