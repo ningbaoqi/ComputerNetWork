@@ -72,3 +72,25 @@ SMTP不使用中间的邮件服务器
 ### 基于万维网的电子邮件
 
 + 如谷歌GMail和网易(163)等都提供了万维网邮件服务，这些万维网邮件服务器都带有方便使用的用户代理，并且都使用`IMAP`，用户可以在这种邮件服务器中存放很多的邮件(已读取的、已发送的、已删除的但尚未彻底删除的等等)，注意：电子邮件从`A的浏览器`发送到`网易的邮件服务器`时，不是使用SMTP协议，而是使用`HTTP`协议；从`网易的邮件服务器`发送到`新浪的邮件服务器`时使用的是`SMTP`协议而不是`HTTP`协议；但`B`用浏览器从`新浪邮件服务器`读取`A`发来的邮件时，使用的是`HTTP`协议，而不是使用`POP3或IMAP协议`；
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-181.jpg)   pic-181.jpg
+### 通用因特网邮件扩充MIME
+#### MIME概述
++ `SMTP`不能传送可执行文件或二进制对象，`SMTP`会拒绝超过一定长度的邮件，因此就提出了`通用因特网邮件扩充MIME`，它的意图是`继续使用原来的邮件格式，但增加了邮件主体的结构，并定义了传送非ASCII码的编码规则`；
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-182.jpg)   pic-182.jpg
+
+|MIME的三部分内容|说明|
+|------|------|
+|5个新的邮件首部字段|他们可包含在原来的首部中，这些字段提供了有关邮件主体的信息，有的是可选的；MIME-Version：标志MIME的版本，现在的版本号为1.0，若无此行则为英文文本；Content-Description：这是可读字符串，说明此邮件主体是否是图像、音频或视频；Content-Id：邮件的唯一标识符；Content-Transfer-Encoding：在传送时邮件的主体是如何编码的；Content-Type：说明邮件主体的数据类型和子类型|
+|定义了许多邮件内容的格式|对多媒体电子邮件的表示方法进行了标准化|
+|定义了传送编码|可对任何内容格式进行转换，而不会被邮件系统改变|
+
+#### 内容传送编码Content-Transfer-Encoding
+
+|内容传送编码种类|
+|------|
+|最简单的编码就是7位ASCII码，而每行不能超过1000个字符，MIME对这种由ASCII码构成的邮件主体不进行任何转换|
+|quoted-printable这种编码方法适用于当所传送的数据中只有少量的非ASCII码如汉字|
+|对于任意的二进制文件，可用base64编码|
+
+#### 内容类型Content-Type
++ `MIME`标准规定`Content-Type`说明必须含有`两个标识符`，即`内容类型`和`子类型`中间用`/`分开如`Content-Type：image/gif`；
