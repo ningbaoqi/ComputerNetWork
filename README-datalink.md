@@ -48,3 +48,6 @@
 + 为了解决这个问题可以使用：发送端的数据链路层在数据中出现控制字符`SOH`和`EOT`的前面插入一个`转义字符ESC(其十六进制编码是1B，二进制是00011011)`，而在接收端的数据链路层在把数据送往网络层之前删除这个插入的转义字符，这种方法称为`字节填充`或`字符填充`；
 ##### 差错检测
 + 目前在数据链路层广泛使用了`循环冗余检验CRC(Cyclic Redundancy Check)`的检错技术；
+
+### 点对点协议PPP
+[点对点协议PPP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-ppp.md)
