@@ -20,3 +20,6 @@
 |客户端使用的端口号|数值为49152~65535，由于这类端口号仅在客户进程运行时才动态选择，因此又叫做短暂端口号|
 
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-73.jpg)   pic-73.jpg
+
+### 可靠传输的工作原理
+[可靠传输的工作原理](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-1-technology.md)
