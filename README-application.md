@@ -16,3 +16,5 @@
 [电子邮件](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-EMAIL-technology.md)
 ### 万维网WWW
 [万维网WWW](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-WWW-technology.md)
+### HTTP协议
+[HTTP协议](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-http-technology.md)
