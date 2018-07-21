@@ -25,3 +25,26 @@
 + `管理信息结构SMI`的功能应当有三个，即规定：一、被管对象应怎么命名；二、用来存储被管对象的数据类型有哪些种；三、在网络上传送的管理数据应如何编码；
 #### 被管对象的命名
 + `SMI`规定，所有的被管对象都必须处在`对象命名树`上；
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-131.jpg)   pic-131.jpg
+
+#### 被管对象的数据类型
++ `SMI`把数据类型分为两大类：`简单类型`和`结构化类型`；
+
+|类型|大小|说明|
+|------|------|------|
+|INTEGER|4字节|在-2^31到2^31-1之间的整数|
+|Integer32|4字节|和INTEGER相同|
+|Unsigned32|4字节|在0到2^32-1之间的无符号数|
+|OCTET STRING|可变|不超过65535字节长的字符串|
+|OBJECT IDENTIFIER|可变|对象标识符|
+|IPAddress|4字节|由4个整数组成的IP地址|
+|Counter32|4字节|可从0增加到2^32的整数，当它到达最大值时就返回到0|
+|TimeTicks|4字节|记录时间的计数值，以1/100秒为单位|
+|BITS|`---`|比特串|
+|Opaque|可变|不解释的串|
+|sequence|可变|相当于C语言的struct|
+|sequence of|可变|相当于C语言的array|
+
+#### 编码方法
++ `SMI`使用ASN.1制定的`基本编码规则BER`，进行数据的编码，ASN.1把所有的数据元素都表示为`T-L-V`三个字段组成的序列，`T`字段`定义数据的类型`，`L`字段`定义V字段的长度`，而`V`字段`定义数据的值`；
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-132.jpg)   pic-132.jpg
