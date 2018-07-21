@@ -12,3 +12,6 @@
 
 ### TCP的运输层连接管理
 [TCP的运输层连接管理](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-tcp-connection-technology.md)
+
+### TCP可靠传输的实现
+[TCP可靠传输的实现](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-tcp-connection1-technology.md)
