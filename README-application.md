@@ -18,3 +18,5 @@
 [万维网WWW](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-WWW-technology.md)
 ### HTTP协议
 [HTTP协议](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-http-technology.md)
+### HTTPS协议
+[HTTPS协议](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-https-technology.md)
