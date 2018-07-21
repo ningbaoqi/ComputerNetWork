@@ -4,3 +4,5 @@
 [简单网络管理协议SNMP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-SNMP-technology.md)
 ### 动态主机配置协议DHCP
 [动态主机配置协议DHCP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-DHCP-technology.md)
+### 远程终端协议TELNET
+[远程终端协议TELNET](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-TELNET-technology.md)
