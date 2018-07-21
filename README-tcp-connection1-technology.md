@@ -12,3 +12,5 @@
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-106.jpg)   pic-106.jpg
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-107.jpg)   pic-107.jpg
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-108.jpg)   pic-108.jpg
+### 超时重传时间的选择
++ TCP采用了一种自适应算法，它记录了`一个报文段发出的时间`，以及`收到相应的确认的时间`，这两个时间之差就是`报文段的往返时间RTT`，TCP保留了RTT的一个`加权平均往返时间RTTs(又称为平滑的往返时间)`；`超时计时器`设置的`超时重传时间RTO`应该略大于上面得出的`加权平均往返时间RTTs`；
