@@ -18,3 +18,6 @@
 
 ### 信道的极限容量
 + 具体的信道所能通过的频率范围总是有限的，在任何信道中，码元传输的速率是有上限的，传输速率超过此上限，就会出现严重的码间串扰的问题，使接收端对码元的判决(即识别)成为不可能；信道的带宽或信道中的信噪比越大，信息的极限传输速率就越高；
+
+### 信道复用技术
+[信道复用技术](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-Channel-multiplexing-technology.md)
