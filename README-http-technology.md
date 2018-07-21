@@ -148,3 +148,12 @@ Accept-Language：cn       //表示用户希望优先得到中文版本的文档
 |`http1.0`|`HTTP1.0在传输数据时，每次都需要重新建立连接，无疑增加了大量的延迟时间`；解决方法：`使用http1.1`|
 |`http1.x`|`在传输数据时，所有传输的内容都是明文，客户端和服务器端都无法验证对方的身份`；解决办法：`使用https`|
 |`http1.1`|`在使用时，header里携带的内容过大，在一定程度上增加了传输的成本`；`虽然http1.1支持了keep-alive来弥补多次创建连接产生的延迟，但是keep-alive使用多了同样会给服务器带来大量的性能压力`|
+
+### cookie&session的区别
+
+|cookie&session的区别|说明|
+|------|------|
+|`cookie`|`cookie技术是客户端的解决方案，cookie就是由服务器发给客户端的特殊信息，而这些信息以文本文件的方式存放在客户端，然后客户端每次向服务器端发送请求的时候都会带上这些特殊的信息，该信息是存放在响应头中的，就是用户个人身份的标识`|
+|`session`|`Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上，客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上`；工作原理：`创建Session；在创建Session的同时，服务器会为该Session生成唯一的Session ID；在Session被创建之后，就可以调用Session相关的方法往Session中增加内容，这些内容在服务器端，发送到客户端的只有Session ID；当客户端再次发送的时候，就将这个Session ID带上，服务器接受到请求之后就会依据Session ID找到相应的Session`|
+|`区别`|`存放的位置不同`；`存取方式不同：cookies保存的是ASCII字符串；Session可以存放任何类型的数据`；`安全性不同`：`cookies相对不安全`；`有效期不同`：`一般设置cookie的有效时间很大；Session依赖ID，如果ID设置为-1，关闭浏览器就失效了`；`对服务器造成的压力不同`：`Session保存在服务器端，并发多的时候对服务器负担很严重`|
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-204.jpg)   pic-204.jpg
