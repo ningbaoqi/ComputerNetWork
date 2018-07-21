@@ -6,3 +6,5 @@
 [动态主机配置协议DHCP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-DHCP-technology.md)
 ### 远程终端协议TELNET
 [远程终端协议TELNET](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-TELNET-technology.md)
+### 文件传送协议
+[文件传送协议](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-FILE-technology.md)
