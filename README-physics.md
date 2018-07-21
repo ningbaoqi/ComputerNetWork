@@ -21,3 +21,5 @@
 
 ### 信道复用技术
 [信道复用技术](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-Channel-multiplexing-technology.md)
+### 宽带接入技术
+[宽带接入技术](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-Broadband-access-technology.md)
