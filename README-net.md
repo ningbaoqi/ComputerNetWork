@@ -19,3 +19,6 @@
 
 ### 网际控制报文协议ICMP
 [网际控制报文协议ICMP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-icmp-protocol.md)
+
+### 网际协议IP
+[网际协议IP](https://github.com/ningbaoqi/ComputerNetWork/blob/master/README-ip-protocol.md)
