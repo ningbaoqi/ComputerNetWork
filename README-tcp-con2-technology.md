@@ -1,5 +1,5 @@
 ### TCP的流量控制
 #### 利用滑动窗口实现流量控制
 + `流量控制就是让发送方的发送速率不要太快，要让接收方来得及接收`；`发送方的发送窗口不能超过接收方给出的接收窗口的数值`，`TCP的窗口单位是字节，不是报文段`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-100.jpg)   pic-100.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-100.jpg) 
 + TCP为每一个连接设有一个`持续计时器`，只要TCP连接的一方收到对方的零窗口通知，就启动持续计时器，若持续计时器设置的时间到期，就发送一个零窗口`探测报文段(仅携带1字节的数据)`，而对方就在确认这个探测报文段时给出了现在的`窗口值`；
