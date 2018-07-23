@@ -8,7 +8,7 @@
 |TCP提供全双工通信，TCP允许通信双方的应用进程在任何时候都能发送数据，TCP连接的两端都设有发送缓存和接收缓存，用来临时存放双向通信的数据|
 |面向字节流，TCP中的流指的是流入到进程或从进程流出的字节序列，TCP把应用程序交下来的数据看成仅仅是一连串的无结构的字节流，TCP并不知道所传送的字节流的含义|
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-91.jpg)   pic-91.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-91.jpg) 
 
 ### TCP的连接
 
