@@ -1,20 +1,20 @@
 ### 网际协议IP
 + 与`IP协议`配套使用的还有三个协议：`地址解析协议ARP(Address Resolution Protocol)`、`网际控制报文协议ICMP(Internet Control Message Protocol)`、`网际组管理协议IGMP(Internet Group Management Protocol)`；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-50.jpg)   pic-50.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-50.jpg)  
 
 + `ARP`画在最下面，因为`IP`经常要使用这个协议，`ICMP`、`IGMP`画在这一层的上部，因为它们要使用`IP`协议；由于`网际协议IP`是用来使互连起来的许多计算机网络能够进行通信，因此`TCP/IP`体系中的网络层常常被称为`网际层`或`IP层`；
 
 ### 虚拟互连网络
 + 由于参加互连的计算机网络都使用相同的`网际协议IP`，因此可以把互连以后的计算机网络看成`虚拟互连网络`，所谓虚拟互联网络就是逻辑互连网络，互连起来的各种物理网络的异构性本来是客观存在的，但是利用`IP协议`就可以使这些性能各异的网络在`网络层上看起来好像是一个统一的网络`；这种使用`IP协议`的虚拟互连网络也称为`IP网`；使用`IP网`的好处是：当`IP网`上的主机进行通信时，就好像在一个单个网络上通信一样，它们看不见互连的各网络的具体异构细节；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-51.jpg)   pic-51.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-51.jpg) 
 
 ### 分类的IP地址
 #### IP地址及其表示方法
 + 分类的IP地址：将`IP地址`划分为若干个固定类，每一类地址都由两个固定长度的字段组成，其中第一个字段是`网络号`，它标志`主机(或路由器)`所连接到的网络，一个`网络号`在整个因特网范围内必须是唯一的，第二个字段是`主机号`，它标志`该主机(或路由器)`，一个`IP地址在整个因特网范围内是唯一的`；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-52.jpg)   pic-52.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-52.jpg)  
 + 当某个单位申请到一个`IP地址`时，实际上是获得了具有同样`网络号`的一块地址，其中具体的各个`主机号`则由该单位自行分配，只要做到在该单位管辖的范围内无重复的主机号即可；下面是一个`B类IP地址`：`128.11.3.31`、即`10000000 00001011 00000011 00011111`；
 
 #### 常用的三种类别的IP地址
@@ -27,17 +27,17 @@
 ### IP地址与硬件地址
 + `物理地址`是`数据链路层`和`物理层`使用的地址，而`IP地址`是`网络层和以上各层`使用的地址；使用`IP地址`的`IP数据报`一旦交给了`数据链路层`，就被封装成了`MAC帧`，`MAC帧`在传送时使用的`源地址`和`目的地址`都是`硬件地址`，这两个`硬件地址`都写在`MAC帧`的首部中；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-53.jpg)   pic-53.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-53.jpg)  
 
 + 在`IP层`抽象的互联网上只能看到`IP数据报`，而且`IP数据报中的目的地址和源地址是不变的`，路由器只根据`目的站的IP地址的网络号`进行路由选择；在局域网的链路层，只能看到`MAC帧`，`MAC`帧在不同网络上传送时，其`MAC帧`首部中的`源地址`和`目的地址`要发生改变；
 
 ### 地址解析协议ARP
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-54.jpg)   pic-54.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-54.jpg)  
 
 + `ARP`协议的用途是`为了从网络层使用的IP地址解析出在数据链路层使用的硬件地址`；`地址解析协议ARP`在`主机ARP高速缓存中应存放一个从IP地址到硬件地址的映射表`，并且这个映射表还经常动态更新(新增或超时删除)，每个主机都设有一个`ARP高速缓存`，里面有`本局域网上`的各主机和路由器的`IP地址到硬件地址的映射表`；`ARP`是解决`同一个局域网上`的主机和路由器的`IP地址`和`硬件地址`的映射问题；
 
 ### IP数据报的格式
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-55.jpg)   pic-55.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-55.jpg)
 
 #### IP数据报首部的固定部分中的各字段
 
@@ -58,4 +58,3 @@
 
 #### IP数据报首部的可变部分
 + IP首部的可变部分就是一个`选项字段`，选项字段用来支持`排错`、`测量`、`安全`等措施，内容很丰富，此字段的长度可变，最后用全0的填充字段补齐成为4字节的整数倍；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-56.jpg)   pic-56.jpg
