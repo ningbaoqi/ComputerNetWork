@@ -10,7 +10,7 @@
 |便于系统的扩展和逐渐的演变，各设备的位置可灵活调整和改变|
 |提高了系统的可靠性、可用性和生存性|
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-10.jpg)   pic-10.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-10.jpg)
 
 #### CSMA/CD协议
 + `CSMA/CD协议`意思是`载波监听多点接入/碰撞检测`；`CSMA/CD协议`的要点：`多点接入`就是说明这是`总线型网络`，许多计算机以多点接入的方式连接在一根总线上，协议的实质是`载波监听`和`碰撞检测`；`载波监听`就是用电子技术检测总线上有没有其他计算机也在发送；
@@ -20,7 +20,7 @@
 ##### MAC层的硬件地址
 + `硬件地址`又称为`物理地址`或`MAC地址`；
 ##### MAC帧的格式
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-11.jpg)   pic-11.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-11.jpg)
 + 第三个字段是2个字节的`类型字段`，用来`标志上一层使用的是什么协议`；当类型字段的值是`0x0800`时，就表示上层使用的是`IP数据报`，若类型字段的值是`0x8137`则表示`该帧是由Novell IPX`发过来的，最后一个字段是4个字节的`帧检验序列FCS(使用CRC检验)`；
 
 ### 扩展的以太网
@@ -28,7 +28,7 @@
 + 在数据链路层扩展以太网要使用`网桥`，网桥工作在数据链路层，它根据MAC帧的目的地址收到的帧进行过滤和转发，当网桥收到一个帧时，并不是向所有的接口转发此帧，而是先检查此帧的目的MAC地址，然后再确认将该帧转发到哪个接口，或者是把它丢弃(即过滤)；
 #### 网桥的内部结构
 + 两个以太网通过网桥连接起来后，就成为一个覆盖范围更大的以太网，而原来的每个以太网就可以称为一个`网段`；网桥依靠`转发表`来转发帧，转发表也叫做`转发数据库`或`路由目录`；网桥在转发帧时，不改变帧的源地址；网桥是按照`存储转发`的方式工作的；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-12.jpg)   pic-12.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-12.jpg)
 #### 源路由网桥
 + `源路由网桥`是在`发送帧时`，把详细的路由信息放在帧的首部中；
 #### 多接口网桥------以太网交换机
@@ -37,14 +37,14 @@
 ### 使用点对点信道的数据链路层
 #### 数据链路和帧
 + `链路`就是从一个结点到相邻结点的一段物理线路(有线和无线)而中间没有任何其他的交换结点；`数据链路`是另外一个概念，这是因为当需要在一条线路上传送数据时，除了必须有一条物理线路外，还必须有一些必要的`通信协议`来控制这些数据的传输，若把实现这些协议的硬件和软件加到链路上，就构成了数据链路，现在最常用的方法是使用`网络适配器(既有硬件、也包含软件)`来实现这些协议，一般的适配器都包括了数据链路层和物理层这两层的功能；点对点信道的数据链路层的协议数据单元为`帧`；数据链路层把网络层交下来的数据构成`帧`发送到链路上，以及把接收到的帧中的数据取出并上交给网络层，在因特网中，网络层协议数据单元就是`IP数据报(或简称为数据报、分组或包)`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-13.jpg)   pic-13.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-13.jpg) 
 
 #### 三个基本问题
 ##### 封装成帧
 + `封装成帧`就是在一段数据的前后分别添加`首部`和`尾部`，这样就构成了一个`帧`；首部和尾部的一个重要作用就是进行`帧定界(即确定帧的界限)`；每一种链路层协议都规定了所能传送的帧的`数据部分长度上限------最大传送单元MTU(Maximum Transfer Unit)`；当数据是由可打印的ASCII码组成的文本文件时，帧定界可以使用特殊的`帧定界符`，一个控制字符SOH(Start Of Header)放在一帧的最前面，表示帧的首部开始，另一个控制字符`EOT(End Of Transmission)`表示帧的结束，请注意，SOH和EOT都是控制字符的名称，它们的十六进制编码分别为`01(二进制是00000001)`和`04(二进制是00000100)`，SOH(或EOT)并不是S、O、H(或E、O、T)三个字符；
 ##### 透明传输
 + 如果在数据中的某个字节的二进制代码恰好和`SOH`和`EOT`这种控制字符一样，数据链路层就会错误的找到帧边界，把部分帧收下，而把剩余的那部分数据丢弃；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-14.jpg)   pic-14.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-14.jpg) 
 + 为了解决这个问题可以使用：发送端的数据链路层在数据中出现控制字符`SOH`和`EOT`的前面插入一个`转义字符ESC(其十六进制编码是1B，二进制是00011011)`，而在接收端的数据链路层在把数据送往网络层之前删除这个插入的转义字符，这种方法称为`字节填充`或`字符填充`；
 ##### 差错检测
 + 目前在数据链路层广泛使用了`循环冗余检验CRC(Cyclic Redundancy Check)`的检错技术；
