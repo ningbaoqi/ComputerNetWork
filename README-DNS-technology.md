@@ -2,7 +2,7 @@
 #### 域名系统概述
 + `域名系统DNS`是因特网使用的`命名系统`，用来把便于人们使用的`机器名字`转换为`IP地址`；`DNS`使大多数名字都在`本地进行解析`，仅`少量`解析需要在因特网上通信，因此`DNS系统`的效率很高；
 #### 因特网的域名结构
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-165.jpg)   pic-165.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-165.jpg)
 + `DNS`规定，域名中的`标号`都由`英文字母`和`数字`组成，`每个标号不超过63个字符(最好不要超过12个字符)`，`也不区分大小写`，标号中除了`-`外不能使用其他的标点符号，级别最低的域名写在`最左边`，而级别最高的`顶级域名`则写在`最右边`，`由多个标号组成的完整域名总共不超过255个字符`，`域名`只是个`逻辑概念`，并不代表计算机所在的物理地点；
 
 |原先的顶级域名分为三大类|说明|
@@ -18,11 +18,11 @@
 |行政区域名|共34个；适用于我国的各省、自治区、直辖市，如：bj：北京市；js：江苏省|
 
 + 值得注意的是：我国修订的域名体系允许直接在`cn`的`顶级域名`下`注册二级域名`，如某公司`abc`以前要注册为`abc.com.cn`是一个`三级域名`，但现在可以注册为`abc.cn`变成了`二级域名`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-166.jpg)   pic-166.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-166.jpg) 
 ### 域名服务器
 + 一个`服务器`所负责管辖的(或有权限的)范围叫做`区`，各单位根据具体情况来划分自己管辖范围的区，但在一个区中所有节点必须是能够连通的，每一个区设置相应的`权限域名服务器`，用来`保存该区中的所有主机的域名到IP地址的映射`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-167.jpg)   pic-167.jpg
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-168.jpg)   pic-168.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-167.jpg)  
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-168.jpg) 
 
 |域名服务器类别|说明|
 |------|------|
@@ -37,5 +37,5 @@
 |------|
 |主机向本地域名服务器的查询一般都是采用递归查询，所谓递归查询就是：如果主机所询问的本地域名服务器不知道被查询域名的IP地址，那么本地域名服务器就以DNS客户的身份，向其他根域名服务器继续发出查询请求报文|
 |本地域名服务器向根域名服务器的查询通常是采用迭代查询，迭代查询的特点是：当根域名服务器收到本地域名服务器发出的迭代查询请求报文时，要么给出所要查询的IP地址，要么告诉本地域名服务器下一步应该向哪一个域名服务器进行查询，然后让本地域名服务器进行后续的查询(而不是替本地域名服务器进行后续的查询)|
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-169.jpg)   pic-169.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-169.jpg) 
 + 在`域名服务器`中广泛的使用了`高速缓存`(有时也称为高速缓存域名服务器)，`高速缓存`用来存放`最近查询过的域名以及从何处获得域名映射信息的记录`；
