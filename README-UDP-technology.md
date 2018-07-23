@@ -9,9 +9,9 @@
 |UDP支持一对一，一对多，多对一，多对多的交互通信|
 |UDP的首部开销小，只有8个字节，比TCP的20个字节的首部要短|
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-110.jpg)   pic-110.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-110.jpg)  
 ### UDP的首部格式
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-111.jpg)   pic-111.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-111.jpg) 
 
 |首部字段|说明|
 |------|------|
