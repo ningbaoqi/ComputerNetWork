@@ -1,7 +1,7 @@
 ### 网际控制报文协议ICMP
 + `ICMP`允许主机或路由器报告差错情况和提供有关异常情况的报告；`ICMP`报文作为`IP层数据报`的`数据`，加上数据报的`首部`，组成`IP数据报`发送出去；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-40.jpg)   pic-40.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-40.jpg)
 
 ### ICMP报文的种类
 
