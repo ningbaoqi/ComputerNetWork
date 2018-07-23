@@ -1,9 +1,9 @@
 ### 超文本传送协议HTTP
 #### HTTP的操作过程
 + `HTTP协议`定义了浏览器(万维网客户端进程)怎样向万维网服务器请求万维网文档，以及服务器怎样把文档传送给浏览器，`HTTP`是`面向事务的`应用层协议，它是万维网上能够可靠的交换文件的重要基础；在浏览器和服务器之间的请求和响应的交互，必须按照`规定的格式和遵循一定的规则`，这些`格式和规则`就是`超文本传送协议HTTP`；`HTTP`规定在`HTTP客户`与`HTTP服务器`之间的每次交互，都由一个`ASCII码串`构成的`请求`和一个类似的`通用因特网邮件扩充即类MIME`的`响应`组成，`HTTP报文`通常都使用`TCP`连接传送；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-200.jpg)   pic-200.jpg
+
 + `HTTP`使用了面向连接的`TCP`作为运输层协议，保证了数据的可靠传输，`HTTP`不必考虑数据在传输过程中被丢弃后又怎样被重传，但是，`HTTP`协议`本身是无连接的`，就是说，虽然`HTTP`使用了`TCP`连接，但通信的双方在交换`HTTP报文`之前不需要先建立`HTTP连接`；`HTTP`协议的`无状态的`，也就是说，同一个客户第二次访问同一个服务器上的页面时，服务器的响应与第一次被访问时的相同；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-201.jpg)   pic-201.jpg
+
 + 万维网客户把`HTTP请求报文`作为`三次握手`的`第三个报文`的数据发送给万维网服务器，服务器收到HTTP请求报文后，就把所请求的文档作为响应报文返回给客户；`HTTP`使用了`持续连接`，持续连接就是万维网服务器在发送响应后仍然在一段时间内保持这条连接，使同一个客户和该浏览器可以继续在这条连接上传送后续的`HTTP请求报文和响应报文`，这并不局限于传送同一个页面上链接的文档，而是只要这些文档都在同一个服务器上就行；
 
 |持续连接两种工作方式|说明|
@@ -13,10 +13,10 @@
 
 #### 代理服务器
 + `代理服务器`是一种网络实体，它又称为`万维网高速缓存`，代理服务器把最近的一些请求和响应暂存在`本地磁盘`中，当新请求到达时，若代理服务器发现这个请求与暂存的请求相同，就返回暂存的响应；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-202.jpg)   pic-202.jpg
+
 #### HTTP的报文结构
 + `HTTP`是`面向文本的`，因此在报文中的每一个字段都是一些`ASCII码串`，因而各个字段的长度都是`不确定的`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-203.jpg)   pic-203.jpg
+
 
 |字段|说明|
 |------|------|
@@ -156,4 +156,5 @@ Accept-Language：cn       //表示用户希望优先得到中文版本的文档
 |`cookie`|`cookie技术是客户端的解决方案，cookie就是由服务器发给客户端的特殊信息，而这些信息以文本文件的方式存放在客户端，然后客户端每次向服务器端发送请求的时候都会带上这些特殊的信息，该信息是存放在响应头中的，就是用户个人身份的标识`|
 |`session`|`Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上，客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上`；工作原理：`创建Session；在创建Session的同时，服务器会为该Session生成唯一的Session ID；在Session被创建之后，就可以调用Session相关的方法往Session中增加内容，这些内容在服务器端，发送到客户端的只有Session ID；当客户端再次发送的时候，就将这个Session ID带上，服务器接受到请求之后就会依据Session ID找到相应的Session`|
 |`区别`|`存放的位置不同`；`存取方式不同：cookies保存的是ASCII字符串；Session可以存放任何类型的数据`；`安全性不同`：`cookies相对不安全`；`有效期不同`：`一般设置cookie的有效时间很大；Session依赖ID，如果ID设置为-1，关闭浏览器就失效了`；`对服务器造成的压力不同`：`Session保存在服务器端，并发多的时候对服务器负担很严重`|
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-204.jpg)   pic-204.jpg
+
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-204.jpg) 
