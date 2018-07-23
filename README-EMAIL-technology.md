@@ -1,6 +1,6 @@
 ### 电子邮件
 + 电子邮件标准：`简单邮件传送协议SMTP`和`因特网文本报文格式`；由于因特网的`SMTP`只能传送`可打印的7位ASCII码`邮件，后又提出了`通用因特网邮件扩充MIME`，`MIME`在其邮件首部中说明了`邮件的数据类型(如文本、声音、图像、视频等)`，在`MIME`邮件中可同时传送多种类型的数据；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-180.jpg)   pic-180.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-180.jpg) 
 
 |电子邮件系统的四个组成部分|说明|
 |------|------|
@@ -72,11 +72,11 @@ SMTP不使用中间的邮件服务器
 ### 基于万维网的电子邮件
 
 + 如谷歌GMail和网易(163)等都提供了万维网邮件服务，这些万维网邮件服务器都带有方便使用的用户代理，并且都使用`IMAP`，用户可以在这种邮件服务器中存放很多的邮件(已读取的、已发送的、已删除的但尚未彻底删除的等等)，注意：电子邮件从`A的浏览器`发送到`网易的邮件服务器`时，不是使用SMTP协议，而是使用`HTTP`协议；从`网易的邮件服务器`发送到`新浪的邮件服务器`时使用的是`SMTP`协议而不是`HTTP`协议；但`B`用浏览器从`新浪邮件服务器`读取`A`发来的邮件时，使用的是`HTTP`协议，而不是使用`POP3或IMAP协议`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-181.jpg)   pic-181.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-181.jpg) 
 ### 通用因特网邮件扩充MIME
 #### MIME概述
 + `SMTP`不能传送可执行文件或二进制对象，`SMTP`会拒绝超过一定长度的邮件，因此就提出了`通用因特网邮件扩充MIME`，它的意图是`继续使用原来的邮件格式，但增加了邮件主体的结构，并定义了传送非ASCII码的编码规则`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-182.jpg)   pic-182.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-182.jpg) 
 
 |MIME的三部分内容|说明|
 |------|------|
