@@ -2,13 +2,13 @@
 #### 内部网关协议RIP
 + `RIP`是一种分布式的`基于距离向量的路由选择协议`，`RIP只适用于小型互联网`，每一个路由器都要不断的和其他一些路由器交换路由信息，`仅和相邻路由器交换信息`、`路由器交换的信息是当前路由器所知道的全部信息，即自己的路由表`、`按固定时间间隔交换路由信息`，路由器在刚刚开始工作时，只知道直接连接的网络的距离，接着，每一个路由器也只和数目有限的相邻路由器交换并更新路由信息，但经过若干次的更新后，所有的路由器最终都会知道到达本自治系统中任何一个网络的`最短距离`和`下一跳路由器的地址`；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-30.jpg)   pic-30.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-30.jpg) 
 
 + `命令`字段指出`报文的意义`如`1`表示`请求路由信息`，`2`表示`对请求路由信息的响应或未被请求而发出的路由更新报文`，首部后面的`必为0`是为了`4字节字的对齐`；`地址族标识符`字段用来`标志所使用的地址协议`，如采用`IP地址`就令这个字段的值为`2`；`路由标记`填入`自治系统号ASN`；
 ### 内部网关协议OSPF
 + `开放最短路径优先OSPF`只是一个协议的名字，`并不表示其他的路由选择协议不是最短路径优先`；`OSPF`最主要的特征就是使用分布式的`链路状态协议`，向本自治系统中`所有路由器`发送信息，而每一个相邻路由器又再将此信息发往其所有的相邻路由器(但不再发送给刚刚发来信息的那个路由器)，只有当链路状态`发生变化`时，路由器才向所有路由器用洪泛法发送此信息；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-31.jpg)   pic-31.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-31.jpg) 
 
 |字段|说明|
 |------|------|
@@ -24,7 +24,7 @@
 ### 外部网关协议BGP
 + `边界网关协议BGP`只能是力求寻找一条能够到达目的网络且`比较好`的路由，而`并非要寻找一条最佳路由`，BGP采用了`路径向量路由选择协议`；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-32.jpg)   pic-32.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-32.jpg) 
 
 |字段|说明|
 |------|------|
@@ -35,5 +35,4 @@
 ### 路由器的构成
 + `路由器`是一种具有多个`输入端口`和多个`输出端口`的专用计算机，其任务是`转发分组`；
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-33.jpg)   pic-33.jpg
-
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-33.jpg) 
