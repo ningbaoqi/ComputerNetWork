@@ -1,7 +1,7 @@
 ### 简单网络管理协议SNMP
 #### 网络管理的基本概念
 + `网络管理包括对硬件、软件和人力的使用、综合与协调，以便对网络资源进行监视、测试、配置、分析、评价和控制，这样就能以合理的价格满足网络的一些需求，如实时运行性能、服务质量等，网络管理简称为网管`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-130.jpg)   pic-130.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-130.jpg) 
 
 |网络管理模型中的主要构件|说明|
 |------|------|
@@ -25,7 +25,7 @@
 + `管理信息结构SMI`的功能应当有三个，即规定：一、被管对象应怎么命名；二、用来存储被管对象的数据类型有哪些种；三、在网络上传送的管理数据应如何编码；
 #### 被管对象的命名
 + `SMI`规定，所有的被管对象都必须处在`对象命名树`上；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-131.jpg)   pic-131.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-131.jpg)  
 
 #### 被管对象的数据类型
 + `SMI`把数据类型分为两大类：`简单类型`和`结构化类型`；
@@ -47,7 +47,7 @@
 
 #### 编码方法
 + `SMI`使用ASN.1制定的`基本编码规则BER`，进行数据的编码，ASN.1把所有的数据元素都表示为`T-L-V`三个字段组成的序列，`T`字段`定义数据的类型`，`L`字段`定义V字段的长度`，而`V`字段`定义数据的值`；
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-132.jpg)   pic-132.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-132.jpg) 
 
 |字段|说明|
 |------|------|
@@ -67,7 +67,7 @@
 |安全参数|用来产生报文摘要|
 |SNMP报文的数据部分||
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-133.jpg)   pic-133.jpg
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic-133.jpg) 
 
 |字段|含义|
 |------|------|
