@@ -3,3 +3,4 @@
 ### [okhttp取消请求](https://github.com/ningbaoqi/ComputerNetWork/commit/2e8e4388ad185476ad52fd31000c9d04b29714fc)
 ### [okhttp设置超时时间和缓存](https://github.com/ningbaoqi/ComputerNetWork/commit/2219dc1f993ef359296d132a811a9469e932349c)
 ### [okhttp异步下载文件](https://github.com/ningbaoqi/ComputerNetWork/commit/59a54525dfed809c3dbfcc8d0c8f0bdc89afd02b)
+### [okhttp异步上传文件](https://github.com/ningbaoqi/ComputerNetWork/commit/c1f80ab5d91a3601a15e8897b308e071d962ab4b)
