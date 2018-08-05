@@ -2,3 +2,10 @@
 
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic1-1.jpg)
 
+#### 获取服务器端IP地
+
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic1-2.jpg)
+
+#### 运行结果
+
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/pic1-3.jpg)
