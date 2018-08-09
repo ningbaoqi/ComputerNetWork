@@ -5,7 +5,7 @@
 
 #### [使用第三方的SmartImageView显示网络图片](https://github.com/ningbaoqi/ComputerNetWork/commit/4e67260e90fc0fda49a344af62b0db4c25f7efde)
 
-![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/b2.gif)
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/b2.jpg)
 
 #### [使用HttpURLConnection将网络上的图片缓存到本地]()
 ```
