@@ -1,4 +1,39 @@
 ### retrofit
 #### [retrofit原理]()
 + 首先通过method把它转换成ServiceMethod；然后通过serviceMethod，args获取到okhttpCall对象；最后再把okhttpCall进一步封装并返回call对象；
+#### [Retrofit的注解分类]()
+
+|HTTP请求方法注解|说明|
+|-------|------|
+|GET||
+|POST||
+|PUT||
+|DELETE||
+|HEAD||
+|PATCH||
+|OPTIONS||
+|HTTP||
+
+|标记类注解|说明|
+|-------|------|
+|FormUrlEncoded||
+|Multipart||
+|Streaming|代表响应的数据以流的形式返回，如果不使用它，则默认会把全部数据加载到内存，所以下载大文件时需要加上这个注解|
+
+|参数类注解|说明|
+|------|------|
+|Header||
+|Headers||
+|Body||
+|Path||
+|Field||
+|FieldMap||
+|Part||
+|PartMap||
+|Query||
+|QueryMap||
+
+
 #### [retrofit的简单使用](https://github.com/ningbaoqi/ComputerNetWork/commit/98db4219b349ce950b4e6237ee809d35c96771ec)
+
+
