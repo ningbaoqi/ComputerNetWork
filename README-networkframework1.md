@@ -3,6 +3,10 @@
 
 ![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/b1.gif)
 
+#### [使用第三方的SmartImageView显示网络图片](https://github.com/ningbaoqi/ComputerNetWork/commit/4e67260e90fc0fda49a344af62b0db4c25f7efde)
+
+![image](https://github.com/ningbaoqi/ComputerNetWork/blob/master/gif/b2.gif)
+
 #### [使用HttpURLConnection将网络上的图片缓存到本地]()
 ```
 if (connection.getResponseCode() == 200) {//如果连接的返回状态码是 200 则说明连接成功，并且服务器会以流的方式传递数据
