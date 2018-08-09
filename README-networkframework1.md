@@ -26,3 +26,4 @@ if (connection.getResponseCode() == 200) {//如果连接的返回状态码是 20
 #### [使用HttpURLConnection的POST请求提交用户名密码并提取数据](https://github.com/ningbaoqi/ComputerNetWork/commit/563f25c3cdb6842e05e26cc2d8e62c7a5480e9c8)
 #### [使用HttpURLConnection多线程下载视频](https://github.com/ningbaoqi/ComputerNetWork/commit/a1a00d6ea1a0b4e86726d6905d0626da868d82bb)
 #### [使用HttpURLConnection多线程断点续传](https://github.com/ningbaoqi/ComputerNetWork/commit/5c4d959e6c8caf64fa3b0930dd7ed4e74c9c1011)
+#### [使用HttpURLConnection网络编程最佳实战](https://github.com/ningbaoqi/ComputerNetWork/commit/41d3ee849044e5b581edaab737157e6c8dec7696)
