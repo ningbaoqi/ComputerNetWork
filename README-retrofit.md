@@ -39,3 +39,4 @@
 #### [retrofit--GET请求访问网络---动态配置URL地址](https://github.com/ningbaoqi/ComputerNetWork/commit/d9f15bf474178b1a6da8461023ca04334e3d214a)
 #### [retrofit--GET请求访问网络---动态指定查询条件](https://github.com/ningbaoqi/ComputerNetWork/commit/63e12635a691797df799e804502d380f0175f461)
 #### [retrofit--GET请求访问网络---动态指定查询条件](https://github.com/ningbaoqi/ComputerNetWork/commit/cbb48a0b267bcf8a736a213bdc2b1b018e9531a2)
+#### [retrofit--POST请求访问网络--传输数据类型为键值对](https://github.com/ningbaoqi/ComputerNetWork/commit/b45883df1a78a0546b0b44d0c6f21b343f144e3f)
