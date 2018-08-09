@@ -20,3 +20,5 @@ if (connection.getResponseCode() == 200) {//如果连接的返回状态码是 20
     inputStream.close();
 }
 ```
+
+#### [使用HttpURLConnection获取网络文本文件](https://github.com/ningbaoqi/ComputerNetWork/commit/b6ae7214f1d177106dfb79f46dd183b05d7078dc)
