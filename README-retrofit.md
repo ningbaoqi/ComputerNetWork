@@ -43,3 +43,4 @@
 #### [retrofit--POST请求访问网络--传输数据类型JSON字符串](https://github.com/ningbaoqi/ComputerNetWork/commit/9523c40ed5c1677512a065a0ff8929ffd0539aa0)
 #### [retrofit--POST请求访问网络--单个文件上传](https://github.com/ningbaoqi/ComputerNetWork/commit/5eeba09703bc1c329eb494010b7aeed5ac71c33b)
 #### [retrofit--POST请求访问网络--多个文件上传](https://github.com/ningbaoqi/ComputerNetWork/commit/50369d503bfcd9e3644f5f67a2e4e394abbd1749)
+#### [retrofit--POST请求访问网络--静态添加单个消息报头](https://github.com/ningbaoqi/ComputerNetWork/commit/0ca833c8b00d741aa9aec3bcd758363dc987f642)
