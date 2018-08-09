@@ -37,3 +37,4 @@
 #### [retrofit的简单使用](https://github.com/ningbaoqi/ComputerNetWork/commit/98db4219b349ce950b4e6237ee809d35c96771ec)
 #### [retrofit--GET请求访问网络](https://github.com/ningbaoqi/ComputerNetWork/commit/a2d843c943eaf868b8800fdc88317b6fdd433269)
 #### [retrofit--GET请求访问网络---动态配置URL地址](https://github.com/ningbaoqi/ComputerNetWork/commit/d9f15bf474178b1a6da8461023ca04334e3d214a)
+#### [retrofit--GET请求访问网络---动态指定查询条件](https://github.com/ningbaoqi/ComputerNetWork/commit/63e12635a691797df799e804502d380f0175f461)
