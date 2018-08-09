@@ -22,3 +22,4 @@ if (connection.getResponseCode() == 200) {//如果连接的返回状态码是 20
 ```
 
 #### [使用HttpURLConnection获取网络文本文件](https://github.com/ningbaoqi/ComputerNetWork/commit/b6ae7214f1d177106dfb79f46dd183b05d7078dc)
+#### [使用HttpURLConnection的GET请求向服务器提交用户名密码并解决乱码问题](https://github.com/ningbaoqi/ComputerNetWork/commit/51cefc8c0f134e8cec3d2bf0672121f62a1b3a51)
