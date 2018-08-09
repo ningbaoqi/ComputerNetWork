@@ -3,3 +3,4 @@
 #### [volley使用简介](https://github.com/ningbaoqi/ComputerNetWork/commit/dcf88d5b03783173cce42912d1543a709f7beb0e)
 #### [使用ImageRequest加载图片](https://github.com/ningbaoqi/ComputerNetWork/commit/1fb8794e6e7f65f1ab9552fc054bba2031881717)
 #### [使用ImageLoader加载图片](https://github.com/ningbaoqi/ComputerNetWork/commit/4195208c363a5ae3d96b6067fffc12662f561b01)
+#### [使用NetworkImageView加载图片](https://github.com/ningbaoqi/ComputerNetWork/commit/ec7a3ef7c4bf0a65f4d09e547e9d6ad3d9b4d42f)
